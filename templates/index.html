@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+</head>
+<body>
+    <div class ='head'>
+    <h1>Recommendation Engine</h1>
+</div>
+<div class = 'main'>
+    <div class = 'card'>
+        <div class = 'image'>
+            <img src="/static/images/The-Importance-of-Lighting-In-Film.jpg" alt="surya">
+        </div>
+        <div class = 'heading'>
+            <h2>Movie Recommendation System</h2>
+        </div>
+        <div class = form>
+            <form action="/recommend" method = 'POST'>
+                <label for="Enter_Movie_Name_Here"></label>
+                <input type="text" name = 'Enter_Movie_Name Here' placeholder="Enter_Movie_Name_Here">
+                <input type="submit" name = 'Click here'>
+            </form>
+
+        </div>
+         </div>
+         
+    
+</body>
+</html>
